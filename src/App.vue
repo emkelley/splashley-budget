@@ -59,7 +59,7 @@
           <div id="chart">
             <center>
               <apexchart
-                type="polarArea"
+                type="pie"
                 width="450"
                 :options="chartOptions"
                 :series="series"
@@ -168,7 +168,7 @@ export default {
         .substring(7);
       this.categories.push({
         id: randID,
-        name,
+        name: name,
         amount: 0,
       });
       this.updateChartLabels(this.catNameArray);
